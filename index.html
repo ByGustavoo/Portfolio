@@ -1,63 +1,418 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Gustavo Correa · Desenvolvedor Java Back-end</title>
+    <meta name="description" content="Portfólio de Gustavo Chauar Correa, desenvolvedor Java back-end na VR Software. APIs REST, integrações e arquitetura com Spring Boot, PostgreSQL e Docker.">
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+    <meta property="og:title" content="Gustavo Correa · Desenvolvedor Java Back-end">
+    <meta property="og:description" content="APIs REST, integrações e arquitetura com Java e Spring Boot.">
+    <meta property="og:image" content="./assets/gustavo.jpg">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111'/%3E%3Ctext x='16' y='21.5' font-family='Arial' font-weight='700' font-size='15' fill='%23fff' text-anchor='middle'%3EGC%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/style.css">
-
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('tema');
+                if (saved) document.documentElement.dataset.theme = saved;
+            } catch (e) {}
+        })();
+    </script>
 </head>
 
 <body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
 
-    <header class="cabecalho">
-        <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-link" href="index.html">Home</a>
-            <a class="cabecalho-menu-link" href="about.html">Sobre mim</a>
-        </nav>
+    <header class="topo" id="topo">
+        <div class="progresso" id="progresso" aria-hidden="true"></div>
+        <div class="topo-interno container">
+            <a class="marca" href="#inicio">Gustavo Correa</a>
+
+            <nav class="menu" id="menu" aria-label="Navegação principal">
+                <a class="menu-link" href="#inicio">Início</a>
+                <a class="menu-link" href="#sobre">Sobre</a>
+                <a class="menu-link" href="#competencias">Competências</a>
+                <a class="menu-link" href="#experiencia">Experiência</a>
+                <a class="menu-link" href="#projetos">Projetos</a>
+                <a class="menu-link" href="#contato">Contato</a>
+            </nav>
+
+            <div class="topo-acoes">
+                <button class="botao-icone" type="button" id="alternar-tema" aria-label="Alternar tema claro e escuro">
+                    <svg class="icone-sol" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                    <svg class="icone-lua" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+                </button>
+                <button class="botao-icone botao-menu" type="button" id="abrir-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                </button>
+            </div>
+        </div>
     </header>
 
-    <main class="apresentacao">
-       
+    <main id="conteudo">
 
-        <section class="apresentacao-conteudo">
+        <section class="hero container" id="inicio">
+            <div class="hero-texto">
+                <p class="selo">
+                    <span class="selo-ponto" aria-hidden="true"></span>
+                    <span class="selo-texto">Desenvolvedor Java na VR Software</span>
+                </p>
 
-            <!-- Título-->
-            <h1 class="apresentacao-conteudo-titulo">Explorando o universo da interface, <strong class="titulo-destaque"> descobrindo as maravilhas do Desenvolvimento Web!</strong></h1>
+                <h1 class="hero-titulo">Olá, eu sou<br>Gustavo Correa</h1>
 
-            <!-- Informações Pessoais-->
-            <p class="apresentacao-conteudo-texto">Olá! Sou o Gustavo Correa, tenho 18 anos, estou estudando Análise e Desenvolvimento de Sistemas na Faculdade Einstein de Limeira 
-                e estou aprimorando meus conhecimentos sendo aluno da Alura, aprendendo a usar o Front-end.</p>
+                <p class="hero-subtitulo">
+                    Desenvolvedor <strong>Java back-end</strong> construindo APIs REST e integrações de sistemas com Spring Boot.
+                </p>
 
-            <div class="apresentacao-links">
-                <!-- Links de Aplicativos-->
-                <h2 class="apresentacao-links-subtitulo">Acesse minhas redes:</h2>
+                <p class="hero-descricao">
+                    Atuo na equipe de Integrações da VR Software, conduzindo meus próprios projetos do início à entrega. Hoje aprofundo arquitetura de software na pós-graduação da FIAP.
+                </p>
 
-                <a class="apresentacao-links-sociais" href="https://www.instagram.com/gustavochauar_/" target="_blank"> 
-                    <img src="./assets/instagram.png" alt="Logo do Instagram"> 
-                        Instagram</a>
+                <div class="hero-acoes">
+                    <a class="botao botao-primario" href="#projetos">
+                        Ver projetos
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+                    </a>
+                    <a class="botao botao-secundario" href="https://www.linkedin.com/in/gustavo-chauar-correa/" target="_blank" rel="noopener">Falar comigo</a>
+                </div>
 
-                <a class="apresentacao-links-sociais" href="https://www.linkedin.com/in/gustavo-chauar-correa-946168269/" target="_blank">
-                    <img src="./assets/linkedin.png" alt="Logo do Linkedin">
-                        Linkedin</a>
+                <ul class="redes" aria-label="Redes">
+                    <li>
+                        <a class="rede" href="https://github.com/ByGustavoo" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rede" href="https://www.linkedin.com/in/gustavo-chauar-correa/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                        </a>
+                    </li>
+                </ul>
 
-                <a class="apresentacao-links-sociais" href="https://github.com/ByGustavoo" target="_blank">
-                    <img src="./assets/github.png" alt="Logo do GitHub">
-                         GitHub</a>
+                <dl class="numeros">
+                    <div class="numero">
+                        <dt>Experiência</dt>
+                        <dd>2+ anos</dd>
+                    </div>
+                    <div class="numero">
+                        <dt>Repositórios</dt>
+                        <dd>50</dd>
+                    </div>
+                    <div class="numero">
+                        <dt>Stack principal</dt>
+                        <dd>Java</dd>
+                    </div>
+                </dl>
             </div>
 
+            <div class="hero-foto">
+                <div class="foto-moldura">
+                    <img src="./assets/gustavo.jpg" alt="Retrato de Gustavo Correa em preto e branco" width="460" height="460">
+                </div>
+                <p class="foto-etiqueta">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+                    Java · Spring Boot
+                </p>
+            </div>
+
+            <a class="rolar" href="#sobre">
+                Role para explorar
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+            </a>
         </section>
 
-        <!-- Foto -->
-        <img class="apresentacao-imagem" src="./assets/guru.png" alt="Foto do Gustavo">
+        <section class="secao container" id="sobre" aria-labelledby="sobre-titulo">
+            <div class="secao-cabecalho">
+                <p class="secao-rotulo">Sobre</p>
+                <h2 class="secao-titulo" id="sobre-titulo">Código que conecta sistemas e aguenta o dia a dia</h2>
+            </div>
+            <div class="sobre-grade">
+                <div class="sobre-texto">
+                    <p>Sou formado em Análise e Desenvolvimento de Sistemas pela Faculdade Einstein. Desde 2024 trabalho na VR Software, empresa que desenvolve soluções para supermercados em todo o Brasil, primeiro como estagiário e, desde 2025, como desenvolvedor Java júnior.</p>
+                    <p>Na equipe de Integrações, cuido dos meus projetos com autonomia: entendo o problema, desenho a integração, implemento, testo e entrego. Fora do trabalho, sigo estudando na pós-graduação em Arquitetura e Desenvolvimento Java da FIAP e em cursos da Alura.</p>
+                </div>
+                <ul class="formacao" aria-label="Formação">
+                    <li class="formacao-item">
+                        <span class="formacao-periodo">2026 a 2027</span>
+                        <strong>Pós-graduação em Arquitetura e Desenvolvimento Java</strong>
+                        <span>FIAP · em andamento</span>
+                    </li>
+                    <li class="formacao-item">
+                        <span class="formacao-periodo">2023 a 2025</span>
+                        <strong>Análise e Desenvolvimento de Sistemas</strong>
+                        <span>Faculdades Integradas Einstein</span>
+                    </li>
+                    <li class="formacao-item">
+                        <span class="formacao-periodo">2023 a 2026</span>
+                        <strong>Formação contínua em programação</strong>
+                        <span>Alura</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="secao container" id="competencias" aria-labelledby="competencias-titulo">
+            <div class="secao-cabecalho">
+                <p class="secao-rotulo">Competências</p>
+                <h2 class="secao-titulo" id="competencias-titulo">Ferramentas do dia a dia</h2>
+            </div>
+            <div class="competencias">
+                <article class="competencia">
+                    <h3>Back-end</h3>
+                    <ul class="etiquetas">
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>Spring Security</li>
+                        <li>APIs REST</li>
+                        <li>gRPC</li>
+                        <li>JUnit 5</li>
+                        <li>MapStruct</li>
+                    </ul>
+                </article>
+                <article class="competencia">
+                    <h3>Arquitetura</h3>
+                    <ul class="etiquetas">
+                        <li>Clean Architecture</li>
+                        <li>Design Patterns</li>
+                        <li>CQRS</li>
+                        <li>Integração de sistemas</li>
+                        <li>Mensageria</li>
+                    </ul>
+                </article>
+                <article class="competencia">
+                    <h3>Dados e infraestrutura</h3>
+                    <ul class="etiquetas">
+                        <li>PostgreSQL</li>
+                        <li>Flyway</li>
+                        <li>Docker</li>
+                        <li>GitHub Actions</li>
+                        <li>Gradle</li>
+                    </ul>
+                </article>
+                <article class="competencia">
+                    <h3>Ferramentas</h3>
+                    <ul class="etiquetas">
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Postman</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao container" id="experiencia" aria-labelledby="experiencia-titulo">
+            <div class="secao-cabecalho">
+                <p class="secao-rotulo">Experiência</p>
+                <h2 class="secao-titulo" id="experiencia-titulo">Trajetória profissional</h2>
+            </div>
+            <ol class="linha-tempo">
+                <li class="cargo">
+                    <p class="cargo-periodo">
+                        <time datetime="2025-05">Maio de 2025</time>
+                        <span>até o momento</span>
+                    </p>
+                    <div>
+                        <h3 class="cargo-titulo">Desenvolvedor Java Júnior</h3>
+                        <p class="cargo-empresa">VR Software · Tempo integral · Remoto</p>
+                        <p class="cargo-descricao">Faço parte da equipe de Integrações da VR Software, empresa de soluções para supermercados de todo o Brasil, com responsabilidade pelos meus próprios projetos.</p>
+                        <ul class="cargo-feitos">
+                            <li>Conduzo as demandas de ponta a ponta, do levantamento de requisitos junto aos clientes à implementação e à entrega final.</li>
+                            <li>Coordeno as integrações sob minha responsabilidade com autonomia, organizando prioridades e analisando problemas até a solução.</li>
+                            <li>Desenvolvo e mantenho as integrações com Java, Spring Boot e PostgreSQL, usando Docker para padronizar o ambiente de desenvolvimento.</li>
+                        </ul>
+                        <ul class="etiquetas etiquetas-pequenas" aria-label="Tecnologias">
+                            <li>Java</li>
+                            <li>Spring Boot</li>
+                            <li>PostgreSQL</li>
+                            <li>Docker</li>
+                            <li>Git</li>
+                            <li>Postman</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cargo">
+                    <p class="cargo-periodo">
+                        <time datetime="2024-01">Janeiro de 2024</time>
+                        <span>a Maio de 2025</span>
+                    </p>
+                    <div>
+                        <h3 class="cargo-titulo">Estagiário de Desenvolvimento</h3>
+                        <p class="cargo-empresa">VR Software · Estágio · Presencial</p>
+                        <p class="cargo-descricao">Primeira experiência como desenvolvedor, na mesma equipe de Integrações, que terminou com a efetivação como Desenvolvedor Java Júnior.</p>
+                        <ul class="cargo-feitos">
+                            <li>Participei do desenvolvimento e do suporte de soluções de integração com Java, Spring Boot e PostgreSQL.</li>
+                            <li>Colaborei em demandas variadas da equipe, aplicando boas práticas de desenvolvimento e versionamento com Git e GitHub.</li>
+                            <li>Aprendi na prática o fluxo de trabalho em equipe, fortalecendo comunicação e resolução de problemas.</li>
+                        </ul>
+                        <ul class="etiquetas etiquetas-pequenas" aria-label="Tecnologias">
+                            <li>Java</li>
+                            <li>Spring Boot</li>
+                            <li>PostgreSQL</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cargo">
+                    <p class="cargo-periodo">
+                        <time datetime="2023-12">Dezembro de 2023</time>
+                        <span>a Janeiro de 2024</span>
+                    </p>
+                    <div>
+                        <h3 class="cargo-titulo">Estagiário de TI</h3>
+                        <p class="cargo-empresa">INSS · Meio período · Presencial</p>
+                        <p class="cargo-descricao">Primeiro contato com o mercado de trabalho, no atendimento direto ao público.</p>
+                        <ul class="cargo-feitos">
+                            <li>Atendi e orientei pessoas, buscando resolver cada caso com comunicação clara e uma boa experiência de atendimento.</li>
+                        </ul>
+                    </div>
+                </li>
+        </section>
+
+        <section class="secao container" id="projetos" aria-labelledby="projetos-titulo">
+            <div class="secao-cabecalho secao-cabecalho-linha">
+                <div>
+                    <p class="secao-rotulo">Projetos</p>
+                    <h2 class="secao-titulo" id="projetos-titulo">Trabalhos selecionados</h2>
+                </div>
+                <a class="link-seta" href="https://github.com/ByGustavoo?tab=repositories" target="_blank" rel="noopener">
+                    Todos os repositórios
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+            </div>
+
+            <div class="projetos">
+                <article class="projeto projeto-destaque">
+                    <div class="projeto-topo">
+                        <p class="projeto-tipo">Full stack · Projeto pessoal</p>
+                        <h3 class="projeto-nome">Prisma</h3>
+                    </div>
+                    <p class="projeto-descricao">Plataforma de finanças pessoais que reúne contas, cartões, lançamentos, investimentos e planejamento. A API concentra regras de negócio como saldo, faturas, parcelamentos, orçamento e previsão, e a interface transforma esses dados em dashboards e relatórios.</p>
+                    <ul class="etiquetas etiquetas-pequenas">
+                        <li>Java 25</li>
+                        <li>Spring Boot 4</li>
+                        <li>PostgreSQL 18</li>
+                        <li>Flyway</li>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Docker</li>
+                    </ul>
+                    <div class="projeto-links">
+                        <a class="link-seta" href="https://github.com/ByGustavoo/PrismaAPI" target="_blank" rel="noopener">
+                            PrismaAPI
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                        </a>
+                        <a class="link-seta" href="https://github.com/ByGustavoo/PrismaWeb" target="_blank" rel="noopener">
+                            PrismaWeb
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <p class="projeto-tipo">Pós-graduação FIAP</p>
+                    <h3 class="projeto-nome">
+                        <a href="https://github.com/ByGustavoo/V2-RestauranteAPI" target="_blank" rel="noopener">Restaurante API</a>
+                    </h3>
+                    <p class="projeto-descricao">Sistema para restaurantes gerenciarem operações, com consultas, avaliações e pedidos online, construído com Clean Architecture.</p>
+                    <ul class="etiquetas etiquetas-pequenas">
+                        <li>Java 21</li>
+                        <li>Spring Boot</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </article>
+
+                <article class="projeto">
+                    <p class="projeto-tipo">Pós-graduação FIAP</p>
+                    <h3 class="projeto-nome">
+                        <a href="https://github.com/ByGustavoo/gRPC-Server" target="_blank" rel="noopener">gRPC Server e Client</a>
+                    </h3>
+                    <p class="projeto-descricao">Servidor e cliente gRPC para comunicação entre serviços, consolidando o conteúdo das aulas de comunicação síncrona.</p>
+                    <ul class="etiquetas etiquetas-pequenas">
+                        <li>Java</li>
+                        <li>gRPC</li>
+                        <li>Protobuf</li>
+                    </ul>
+                </article>
+
+                <article class="projeto">
+                    <p class="projeto-tipo">Pós-graduação FIAP</p>
+                    <h3 class="projeto-nome">
+                        <a href="https://github.com/ByGustavoo/AuthAPI" target="_blank" rel="noopener">Auth API</a>
+                    </h3>
+                    <p class="projeto-descricao">API de autenticação e autorização desenvolvida nos estudos de Spring Security.</p>
+                    <ul class="etiquetas etiquetas-pequenas">
+                        <li>Java 21</li>
+                        <li>Spring Security</li>
+                    </ul>
+                </article>
+
+                <article class="projeto">
+                    <p class="projeto-tipo">Template</p>
+                    <h3 class="projeto-nome">
+                        <a href="https://github.com/ByGustavoo/SpringBootTemplate" target="_blank" rel="noopener">Spring Boot Template</a>
+                    </h3>
+                    <p class="projeto-descricao">Base pronta para iniciar novos projetos Spring Boot com a estrutura e as configurações que uso no dia a dia.</p>
+                    <ul class="etiquetas etiquetas-pequenas">
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>Gradle</li>
+                    </ul>
+                </article>
+
+                <article class="projeto">
+                    <p class="projeto-tipo">Integração</p>
+                    <h3 class="projeto-nome">
+                        <a href="https://github.com/ByGustavoo/CEP-API" target="_blank" rel="noopener">CEP API</a>
+                    </h3>
+                    <p class="projeto-descricao">Integração com a BrasilAPI que consulta CEPs e armazena no banco informações de endereços, estados e municípios.</p>
+                    <ul class="etiquetas etiquetas-pequenas">
+                        <li>Java 24</li>
+                        <li>Spring Boot</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </article>
+
+                <article class="projeto">
+                    <p class="projeto-tipo">Estudo</p>
+                    <h3 class="projeto-nome">
+                        <a href="https://github.com/ByGustavoo/design-patterns-java" target="_blank" rel="noopener">Design Patterns em Java</a>
+                    </h3>
+                    <p class="projeto-descricao">Implementações práticas de padrões de projeto, baseadas nas aulas de Orientação a Objetos da FIAP.</p>
+                    <ul class="etiquetas etiquetas-pequenas">
+                        <li>Java</li>
+                        <li>POO</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao container" id="contato" aria-labelledby="contato-titulo">
+            <div class="contato">
+                <p class="secao-rotulo">Contato</p>
+                <h2 class="contato-titulo" id="contato-titulo">Vamos conversar sobre back&#8209;end, integrações ou uma oportunidade?</h2>
+                <p class="contato-texto">O jeito mais rápido de falar comigo é pelo LinkedIn. Respondo mensagens por lá com frequência.</p>
+                <div class="hero-acoes">
+                    <a class="botao botao-primario" href="https://www.linkedin.com/in/gustavo-chauar-correa/" target="_blank" rel="noopener">Enviar mensagem no LinkedIn</a>
+                    <a class="botao botao-secundario" href="https://github.com/ByGustavoo" target="_blank" rel="noopener">Ver GitHub</a>
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <footer class="rodape">
-        <p>Desenvolvido por Gustavo.</p>
+        <div class="rodape-interno container">
+            <p>© <span id="ano">2026</span> Gustavo Chauar Correa</p>
+            <a class="link-seta" href="#inicio">Voltar ao topo</a>
+        </div>
     </footer>
 
+    <script src="./scripts/main.js"></script>
 </body>
-
 </html>
