@@ -28,4 +28,4 @@ Depois, abra `http://localhost:5500`.
 
 ## 📝 Feito por
 
-**Gustavo Correa** · [LinkedIn](https://www.linkedin.com/in/gustavo-chauar-correa/) · [GitHub](https://github.com/ByGustavoo)
+**Gustavo Correa** · [LinkedIn](https://www.linkedin.com/in/gustavo-chauar-correa/)
